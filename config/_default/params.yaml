@@ -65,8 +65,7 @@ features:
     extra_languages:
       - r
       - latex
-  math:
-    enable: false
+  math: true
   privacy_pack:
     enable: false
   repository:
