@@ -52,4 +52,8 @@ content:
 
 design:
   columns: '2'
+  background:
+    color: '#C68E39'
+    # Text color (true=light, false=dark, or remove for the dynamic theme color). 
+    text_color_light: true
 ---
