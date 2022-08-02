@@ -21,6 +21,5 @@ author: admin
 
 design:
   background:
-    color: '#3971C6'
-
+    color: '#3e5c84'
 ---
