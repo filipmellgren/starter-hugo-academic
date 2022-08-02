@@ -25,7 +25,6 @@ content:
       captcha: false
 
   # Contact details (edit or remove options as required)
-  email: filip.mellgren@su.se
   address:
     street: Universitetsvägen 10 A, plan 6 & 7
     city: Stockholm
