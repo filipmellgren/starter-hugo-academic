@@ -25,19 +25,17 @@ content:
       captcha: false
 
   # Contact details (edit or remove options as required)
-  email: test@example.org
-  phone: 888 888 88 88
+  email: filip.mellgren@su.se
   address:
-    street: 450 Serra Mall
-    city: Stanford
-    region: CA
-    postcode: '94305'
-    country: United States
-    country_code: US
+    street: Universitetsvägen 10 A, plan 6 & 7
+    city: Stockholm
+    postcode: '114 18'
+    country: Sweden
+    country_code: SE
   coordinates:
-    latitude: '37.4275'
-    longitude: '-122.1697'
-  directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+    latitude: '59.3631'
+    longitude: '18.0587'
+  directions: Enter Building A
   office_hours:
     - 'Monday 10:00 to 13:00'
     - 'Wednesday 09:00 to 10:00'
@@ -46,7 +44,7 @@ content:
     - icon: twitter
       icon_pack: fab
       name: DM Me
-      link: 'https://twitter.com/Twitter'
+      link: '[https://twitter.com/Twitter](https://twitter.com/FilipMellgren)'
     - icon: video
       icon_pack: fas
       name: Zoom Me
