@@ -1,1 +1,1 @@
-[View My Slides](/static/uploads/main.html)
+[Skill Supply Slides](/uploads/main.html)
