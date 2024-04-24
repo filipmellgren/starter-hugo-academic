@@ -95,7 +95,26 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="main_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="styles.css">
   <link href="main_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -401,24 +420,22 @@
 <div class="quarto-title-author-name">
 Anders Åkerman, Filip Mellgren, Horng Wong 
 </div>
-</div>
+        <p class="quarto-title-affiliation">
+            Stavanger University, Stockholm University, Stockholm University
+          </p>
+    </div>
 </div>
 
   <p class="date">2024-04-29</p>
 </section>
-<section id="delete" class="slide level2">
-<h2>Delete</h2>
-<p>Cmd Shift K to render</p>
-<p>for colors: https://www.w3schools.com/colors/colors_names.asp</p>
-</section>
-<section id="large-firms-and-the-labor-market" class="slide level2" data-auto-animate="true">
+<section id="large-firms-and-the-labor-market" class="slide level2 smaller" data-auto-animate="true,">
 <h2 data-id="quarto-animate-title">Large firms and the labor market</h2>
 <p><strong>Existing work:</strong></p>
 <ul>
-<li>Labor demand shocks:
+<li>Labor demand shocks ↑ or ↓:
 <ul>
 <li>Implications for firms: Rise of superstars, rising market power.</li>
-<li>Implications on labor markets: faaling labor share, lower real wages</li>
+<li>Implications on labor markets: falling labor share, lower real wages.</li>
 </ul></li>
 </ul>
 </section>
@@ -429,17 +446,168 @@ Anders Åkerman, Filip Mellgren, Horng Wong
 <li>Labor demand shocks:
 <ul>
 <li>Implications for firms: Rise of superstars, rising market power.</li>
-<li>Implications on labor markets: faaling labor share, lower real wages</li>
+<li>Implications on labor markets: faaling labor share, lower real wage growth.</li>
 </ul></li>
 </ul>
 <p><strong>This project</strong>:</p>
 <ul>
 <li>implications of rising <span style="color:darkcyan;">skill supply</span> for <span style="color:tomato;">firms</span> and <span style="color:darkcyan;">labor</span> markets.</li>
 </ul>
+<ol type="1">
+<li>Do skills matter for firm size and product market power?</li>
+<li>Does product market power matter for skill returns?</li>
+<li>What is the impact of rising skill supply on firms, market power, and wage inequality?</li>
+</ol>
 </section>
-<section id="skill-demand-across-firms-and-the-aggregate-implications" class="slide level2">
-<h2>Skill Demand Across Firms and the Aggregate Implications</h2>
+<section id="outline" class="slide level2 smaller">
+<h2>Outline</h2>
+<ul>
+<li>6 key facts:
+<ul>
+<li>Large firms are pulling away in skill intensity, skill premium, markups etc.</li>
+</ul></li>
+<li>Model of heterogenous firms and skill choice.
+<ul>
+<li><span class="citation" data-cites="Edmond_Midrigan_Xu_2015">Edmond, Midrigan, and Xu (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span> + <span class="citation" data-cites="fieler2018trade">Fieler, Eslava, and Xu (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span>.</li>
+<li>Static equilibrium model with endogenous skill augmenting technology.</li>
+</ul></li>
+<li>Simulated experiment results:
+<ul>
+<li>What happens folloring a change in the skill supply?</li>
+</ul></li>
+</ul>
+</section>
+<section id="our-main-findings" class="slide level2">
+<h2>Our main findings</h2>
+<p>Skip?</p>
+</section>
+<section id="contributions" class="slide level2">
+<h2>Contributions</h2>
+<p>Skip?</p>
+</section>
+<section>
+<section id="data-and-facts" class="title-slide slide level1 center">
+<h1>Data and Facts</h1>
+
+</section>
+<section id="skill-intensity" class="slide level2">
+<h2>Skill intensity</h2>
+<p><span style="font-size: 48px; color: gray;">By firm size</span></p>
+
+<img data-src="images/pcyear_cshare_1_sales_one_mfg_1.png" class="r-stretch quarto-figure-center"><p class="caption">Fact 1</p></section>
+<section id="skill-premia" class="slide level2">
+<h2>Skill premia</h2>
+<p><span style="font-size: 48px; color: gray;">By firm size</span></p>
+
+<img data-src="images/sp_c1_3_sales_one_mfg.png" class="r-stretch quarto-figure-center"><p class="caption">Fact 2</p></section>
+<section id="labor-productivity" class="slide level2">
+<h2>Labor productivity</h2>
+<p><span style="font-size: 48px; color: gray;">By firm size</span></p>
+
+<img data-src="images/pcyear_llp_2_sales_one_mfg.png" class="r-stretch quarto-figure-center"><p class="caption">Fact 3</p></section>
+<section id="log-revenue" class="slide level2">
+<h2>Log revenue</h2>
+<p><span style="font-size: 48px; color: gray;">By firm size</span></p>
+
+<img data-src="images/pcyear_lsales_2_sales_one_mfg.png" class="r-stretch quarto-figure-center"><p class="caption">Fact 4</p></section>
+<section id="prices" class="slide level2">
+<h2>Prices</h2>
+<p><span style="font-size: 48px; color: gray;">By firm size</span></p>
+
+<img data-src="images/pc_pnq_cn4_1_sales_one.png" class="r-stretch quarto-figure-center"><p class="caption">Fact 5</p></section>
+<section id="markups" class="slide level2">
+<h2>Markups</h2>
+<p><span style="font-size: 48px; color: gray;">By firm size</span></p>
+
+<img data-src="images/pcyear_lmarkup_2_sales_one_mfg.png" class="r-stretch quarto-figure-center"><p class="caption">Fact 6</p></section></section>
+<section>
+<section id="model" class="title-slide slide level1 center">
+<h1>Model</h1>
+
+</section>
+<section id="labor-market" class="slide level2">
+<h2>Labor market</h2>
+<ul>
+<li><span class="math inline">\(L\)</span> workers.</li>
+<li>Two skill types: skilled (<span class="math inline">\(s\)</span>) and unskilled (<span class="math inline">\(u\)</span>).</li>
+<li>TODO confirm.</li>
+</ul>
+</section>
+<section id="good-market" class="slide level2">
+<h2>Good market</h2>
+<p>TODO: quality of goods.</p>
+<ul>
+<li>Competitive final numeraire good with Kimball:</li>
+</ul>
+<p><span class="math display">\[\int_{i \in \Omega} q_i \mathcal{Y}\bigg( \frac{y_i}{Y} \bigg) \ di = 1\]</span></p>
+<ul>
+<li>Implementation follows <span class="citation" data-cites="klenow2016real">(<a href="#/references" role="doc-biblioref" onclick="">Klenow and Willis 2016</a>)</span>.
+<ul>
+<li>Absolute demand elasticities decrease with size.</li>
+</ul></li>
+<li>Monopolistic sectors <span class="math inline">\(j \in J\)</span> with <span class="math inline">\(n_j\)</span> firms. (Ignore <span class="math inline">\(j\)</span> subscript).</li>
+<li>Inverse demand:</li>
+</ul>
+<p><span class="math display">\[p_i = q_i \mathcal{Y}'\left(\frac{y_i}{Y}\right)Q^{-1}\]</span></p>
+</section>
+<section id="production-technology" class="slide level2">
+<h2>Production technology</h2>
+<p>Production:</p>
+<p><span class="math display">\[y_i = z_i \left( E_i^{\frac{1}{\rho}} l_{s,i}^{\frac{\rho-1}{\rho}} + l_{u,i}^{\frac{\rho - 1}{\rho}} \right)^{\frac{\rho}{\rho - 1}}\]</span></p>
+<ul>
+<li><span class="math inline">\(z_i\)</span> is TFP, ex ante source of firm heterogeneity.</li>
+<li><span class="math inline">\(E_i\)</span> is the skill augmenting technology.</li>
+<li>Fixed production costs <span class="math inline">\(f(E_i)\)</span>, convex in <span class="math inline">\(E_i\)</span>.
+<ul>
+<li>Example: software, skill-specific capital, management practices.</li>
+</ul></li>
+<li>Heterogeneity in <span class="math inline">\(E_i\)</span> induces skill-firm <em>sorting</em>.
+<ul>
+<li>The production function is log supermodular in <span class="math inline">\(E_i\)</span> and <span class="math inline">\(l_{s,i}\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="firm-problem-step-1" class="slide level2">
+<h2>Firm problem, step 1</h2>
+<p>Choose employment, <span class="math inline">\(l_s\)</span>, <span class="math inline">\(l_u\)</span>, conditional on <span class="math inline">\(E_i\)</span>:</p>
+<p><span class="math display">\[\max_{l_{s,i}, l_{u,i}} p_i y_i - w_sl_{s,i} - w_{u}l_{u,i}\]</span></p>
+<p>subject to demand and production technology.</p>
+</section>
+<section id="firm-problem-step-2" class="slide level2">
+<h2>Firm problem, step 2</h2>
+<p>Choose <span class="math inline">\(E_i\)</span>, taking as given optimal revenue conditional on <span class="math inline">\(E_i\)</span>:</p>
+<p><span class="math display">\[\max_{E_i} \frac{1}{\sigma(E_i)} r(E_i) - f(E_i)\]</span></p>
+<ul>
+<li><span class="math inline">\(f(E_i)\)</span> is a fixed cost, convex in <span class="math inline">\(E_i\)</span>.</li>
+</ul>
+</section>
+<section id="equilibrium-labor-shares" class="slide level2">
+<h2>Equilibrium labor shares</h2>
+<p><span style="font-size: 48px; color: gray;">Optimal labor demand</span></p>
+<ul>
+<li><p><span class="math inline">\(\frac{w_s l_{s,i}}{p_i y_i} = \color{darkcyan}{\mu_i}^{-1} \frac{1}{1 + \frac{1}{\color{black}{\color{crimson}{E_i}}} \left(\frac{w_s}{w_u}\right)^{\rho - 1}}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{w_u l_{u,i}}{p_i y_i} = \color{darkcyan}{\mu_i}^{-1} \left( 1 - \frac{1}{1 + \frac{1}{E_i} \left(\frac{w_s}{w_u}\right)^{\rho - 1}} \right)\)</span></p></li>
+</ul>
+<p><span class="math inline">\(\rightarrow\)</span> Skill adoption increases <span style="color:darkcyan;">markups</span>.</p>
+<p><span class="math inline">\(\rightarrow\)</span> Skill adoption increases <span style="color:coral;">skill intensity</span>.</p>
+<p><span style="font-size: 48px; color: gray;">Optimal skill technology adoption</span></p>
+</section>
+<section id="equilibrium-technology-adoption" class="slide level2">
+<h2>Equilibrium technology adoption</h2>
+</section></section>
+<section>
+<section id="experiment" class="title-slide slide level1 center">
+<h1>Experiment</h1>
+<p><span style="font-size: 48px; color: gray;">Increasing the skill supply</span></p>
+</section>
+<section id="results" class="slide level2">
+<h2>Results</h2>
+<p>Here: Show graphs where E_i is fixed at 1 (EMX), then when we allow firms to choose, then when we change the skill supply</p>
+</section>
+<section id="todo-tmp" class="slide level2">
+<h2>TODO TMP</h2>
 <p>Quarto preview: CMD shift K</p>
+<p>for colors: https://www.w3schools.com/colors/colors_names.asp</p>
 <p>This presentation will show you examples of what you can do with Quarto and <a href="https://revealjs.com">Reveal.js</a>, including:</p>
 <ul>
 <li>Presenting code and LaTeX equations</li>
@@ -465,15 +633,32 @@ Anders Åkerman, Filip Mellgren, Horng Wong
 <span id="cb1-7" class="hljs-ln-code"><a href="#cb1-7"></a>  })</span>
 <span id="cb1-8" class="hljs-ln-code"><a href="#cb1-8"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
+<section id="new-test" class="slide level2">
+<h2>New test</h2>
+<p>blabla</p>
+</section>
 <section id="test-python-code" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Test Python Code</h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb2-1" class="hljs-ln-code"><a href="#cb2-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb2-2" class="hljs-ln-code"><a href="#cb2-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-<img src="images/quarto.png" class="slide-logo r-stretch"><div class="footer footer-default">
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div class="footer footer-default">
 <p><a href="https://quarto.org" class="uri">https://quarto.org</a></p>
 </div>
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Edmond_Midrigan_Xu_2015" class="csl-entry" role="listitem">
+Edmond, C., V. Midrigan, and D. Y. Xu. 2015. <span>“<a href=""><span class="nocase">Competition, Markups, and the Gains from International Trade</span></a>.”</span> <em>American Economic Review</em> 105 (10): 3183–3221.
+</div>
+<div id="ref-fieler2018trade" class="csl-entry" role="listitem">
+Fieler, Ana Cecı́lia, Marcela Eslava, and Daniel Yi Xu. 2018. <span>“Trade, Quality Upgrading, and Input Linkages: Theory and Evidence from Colombia.”</span> <em>American Economic Review</em> 108 (1): 109–46.
+</div>
+<div id="ref-klenow2016real" class="csl-entry" role="listitem">
+Klenow, Peter J, and Jonathan L Willis. 2016. <span>“Real Rigidities and Nominal Price Changes.”</span> <em>Economica</em> 83 (331): 443–72.
+</div>
+</div>
+</section></section>
     </div>
   </div>
 
