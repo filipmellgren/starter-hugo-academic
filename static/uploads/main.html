@@ -377,15 +377,9 @@ Anders Åkerman, Filip Mellgren, Horng Wong
 <section id="large-firms-and-the-labor-market-1" class="slide level2 smaller" data-auto-animate="true,">
 <h2 data-id="quarto-animate-title">Large firms and the labor market</h2>
 <p><span style="font-size: 48px; color: gray;">This project: labor supply shock</span></p>
-<p>Implications of rising skill supply for <span style="color:salmon;">market power</span> and <span style="color:darkcyan;">skill premium</span>.</p>
-</section>
-<section id="large-firms-and-the-labor-market-2" class="slide level2 smaller" data-auto-animate="true,">
-<h2 data-id="quarto-animate-title">Large firms and the labor market</h2>
-<p><span style="font-size: 48px; color: gray;">This project: labor supply shock</span></p>
-<p>Implications of rising skill supply for market power and skill premium.</p>
 <ol type="1">
 <li>Do <span style="color:darkcyan;">skill supply</span> matter for product <span style="color:salmon;">market power</span>?</li>
-<li>Does product <span style="color:salmon;">market power</span> matter for <span style="color:darkcyan;">skill returns</span>?</li>
+<li>Does product <span style="color:salmon;">market power</span> matter for the <span style="color:darkcyan;">skill premium</span>?</li>
 </ol>
 </section>
 <section id="skill-supply" class="slide level2 smaller" data-auto-animate="true,">
@@ -466,12 +460,7 @@ Anders Åkerman, Filip Mellgren, Horng Wong
 <h2>Log revenue</h2>
 <p><span style="font-size: 48px; color: gray;">By firm size</span></p>
 
-<img data-src="images/facts_upd/pcyear_lsales_2_sales_one_mfg-1714204291809.png" class="r-stretch quarto-figure-center"><p class="caption">Fact 5</p></section>
-<section id="prices" class="slide level2">
-<h2>Prices</h2>
-<p><span style="font-size: 48px; color: gray;">By firm size</span></p>
-
-<img data-src="images/facts_upd/pc_pnq_cn4_1_sales_one-1714204290687.png" class="r-stretch quarto-figure-center"><p class="caption">Fact 6</p></section></section>
+<img data-src="images/facts_upd/pcyear_lsales_2_sales_one_mfg-1714204291809.png" class="r-stretch quarto-figure-center"><p class="caption">Fact 5</p></section></section>
 <section>
 <section id="model" class="title-slide slide level1 center">
 <h1>Model</h1>
@@ -506,7 +495,6 @@ Anders Åkerman, Filip Mellgren, Horng Wong
 <li>Ignore <span class="math inline">\(j\)</span>-subscript.</li>
 <li>Competitive final numeraire good with Cobb Douglas aggregator.</li>
 </ul></li>
-<li>Horizontally differentiated varieties.</li>
 <li>Inverse demand as in <span class="citation" data-cites="klenow2016real">Klenow and Willis (<a href="#/references" role="doc-biblioref" onclick="">2016</a>)</span>.
 <ul>
 <li>Absolute demand elasticities decrease with size.</li>
@@ -519,28 +507,25 @@ Anders Åkerman, Filip Mellgren, Horng Wong
 <h2>Production technology</h2>
 <p><span class="math display">\[y_i = \Omega_i \cdot \left( \color{darkcyan}{E_i} l_{s,i}^{\frac{\rho-1}{\rho}} + l_{u,i}^{\frac{\rho - 1}{\rho}} \right)^{\frac{\rho}{\rho - 1}}\]</span></p>
 <ul>
-<li><p>Firms choose heterogenous <span class="math inline">\(E_i\)</span>, inducing skill-firm <em>sorting</em>.</p>
+<li><p>Firms choose heterogenous <span class="math inline">\(\color{darkcyan}{E_i}\)</span>, inducing skill-firm <em>sorting</em>.</p>
 <ul>
-<li><span style="color:darkcyan;">Skill premium</span> disproportionately higher in firms with high <span class="math inline">\(E_i\)</span>.</li>
+<li><span style="color:darkcyan;">Skill premium</span> disproportionately higher in firms with high <span class="math inline">\(\color{darkcyan}{E_i}\)</span>.</li>
 <li>Example: software, skill-specific capital, management practices.</li>
 </ul></li>
-<li><p>Fixed production costs <span class="math inline">\(f(E_i)\)</span>, convex in <span class="math inline">\(E_i\)</span>.</p></li>
+<li><p>Fixed production costs <span class="math inline">\(f(\color{darkcyan}{E_i})\)</span>, convex in <span class="math inline">\(\color{darkcyan}{E_i}\)</span>.</p></li>
 <li><p>Compare <span class="citation" data-cites="krusell2000capital">Krusell et al. (<a href="#/references" role="doc-biblioref" onclick="">2000</a>)</span>.</p></li>
 </ul>
 </section>
 <section id="firm-problem-step-1" class="slide level2">
 <h2>Firm problem, step 1</h2>
-<p>Choose employment, <span class="math inline">\(l_s\)</span>, <span class="math inline">\(l_u\)</span>, conditional on <span class="math inline">\(E_i\)</span>:</p>
+<p>Choose employment, <span class="math inline">\(l_s\)</span>, <span class="math inline">\(l_u\)</span>, conditional on <span class="math inline">\(\color{darkcyan}{E_i}\)</span>:</p>
 <p><span class="math display">\[\max_{l_{s,i}, l_{u,i}} p_i y_i - w_{s, i}l_{s,i} - w_{u,i}l_{u,i}\]</span></p>
 <p>subject to demand and production technology.</p>
 </section>
 <section id="firm-problem-step-2" class="slide level2">
 <h2>Firm problem, step 2</h2>
-<p>Choose <span class="math inline">\(E_i\)</span>, taking as given optimal input conditional on <span class="math inline">\(E_i\)</span>:</p>
-<p><span class="math display">\[\max_{E_i^*} R_i^{**} \cdot \left(1 - \frac{\lambda}{\mu_i^{**}} \right) - f(E_i^*)\]</span></p>
-<ul>
-<li><span class="math inline">\(f(E_i^*)\)</span> is a fixed cost, convex in <span class="math inline">\(E_i^*\)</span>.</li>
-</ul>
+<p>Choose <span class="math inline">\(\color{darkcyan}{E_i}\)</span>, taking as given optimal input conditional on <span class="math inline">\(\color{darkcyan}{E_i}\)</span>:</p>
+<p><span class="math display">\[\max_{\color{darkcyan}{E_i}} R_i^{**} \cdot \left(1 - \frac{\lambda}{\color{salmon}{\mu_i^{**}}} \right) - f(\color{darkcyan}{E_i}^*)\]</span></p>
 </section>
 <section id="optimal-skill-technology-adoption" class="slide level2">
 <h2>Optimal skill technology adoption</h2>
@@ -556,7 +541,7 @@ Anders Åkerman, Filip Mellgren, Horng Wong
 <li><p><span class="math inline">\(\frac{w_{s,i} l_{s,i}}{p_i y_i} = \color{salmon}{\mu_i}^{-1} \cdot \frac{1}{1 + \frac{1}{\color{darkcyan}{E_i}} \left(\frac{w_{s,i}}{w_{u,i}}\right)^{\rho - 1}}\)</span></p></li>
 </ul>
 <p><span class="math inline">\(\rightarrow\)</span> <span style="color:salmon;">Markups</span> depress the unskilled labor share.</p>
-<p><span class="math inline">\(\rightarrow\)</span> <span style="color:salmon;">Markups</span> ambiguously affect the skilled labor share:</p>
+<p><span class="math inline">\(\rightarrow\)</span> <span style="color:salmon;">Markups</span> ambiguously affect the skilled labor share.</p>
 </section></section>
 <section>
 <section id="experiment" class="title-slide slide level1 center">
